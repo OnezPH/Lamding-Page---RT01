@@ -10,6 +10,10 @@ body{
 .main-con{
     display: block;
 }
+::-webkit-scrollbar{
+    scroll-behavior: smooth;
+    display: none;
+}
 .first-con-header{
     width: 100%;
     height: 40px;
@@ -143,6 +147,72 @@ body{
 }
 .content{
     width: 100%;
+    height: calc(100vh - 100px);
+
+    background-color: rgba(46, 46, 46, 0.7);
+    background-image: url(asset/1bg.webp);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-blend-mode: darken;
+
+    display: flex;
+    align-items: center;
+}
+.con-text-con{
+    width: 550px;
+    margin: 0 0 0 220px;
+}
+.con-text-con > h1{
+    color: #fff;
+    font-size: 65px;
+    line-height: 90px;
+}
+.con-text-con > p{
+    font-size: 15px;
+    font-weight: 400;
+    color: #fff;
+    margin: 20px 0 40px 0;
+}
+.ctc-btn{
+    display: flex;
+}
+.ctc-btn > button{
+    width: 170px;
+    height: 50px;
+    margin-right: 20px;
+
+    outline: none;
+    border: none;
+    border-radius: 6px;
+
+    font-size: 14px;
+    font-weight: 400;
+
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+.ctc-btn > button:nth-child(1){
+    background-color: #5831ff;
+    color: #fff;
+}
+.ctc-btn > button:nth-child(1):hover{
+    background-color: rgb(70, 44, 189);
+}
+.ctc-btn > button:nth-child(2){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+}
+.ctc-btn > button:nth-child(2) > i{
+    font-size: 16px;
+}
+.ctc-btn > button:nth-child(2):hover{
+    background-color: #d8d8d8;
+}
+.content2{
+    width: 100vh;
     height: 100vh;
-    background-color: #222;
+
+    background-color: #fff;
 }
